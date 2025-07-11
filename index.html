@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio Intro</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-left">
+      <a href="https://github.com/alcruz02" class="nav-link">Github Repositories</a>
+      <a href="https://drive.google.com/uc?id=1mYB7oq5hzgbSpKmXZteYaKB54TnHcMWy" class="nav-link" target="_blank">Resume</a>
+      <a href="#about" class="nav-link">About Me</a>
+      <a href="https://drive.google.com/drive/folders/152Cwo60VqQz1uYUbl7B2PxNmvYQmp-yw?usp=sharing" class="nav-link">Other Projects</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </div>
+    <div class="nav-right">
+      <a href="https://www.linkedin.com/in/alberto-louis-cruz-2818232bb/" class="icon-link" target="_blank">LinkedIn</a>
+      <a href="https://www.facebook.com/alberto.louis.cruz" class="icon-link" target="_blank">Facebook</a>
+    </div>
+  </nav>
+
+  <main class="container">
+    <div class="intro animate">
+      <div class="profile-img">
+        <img src="pic.jpg" alt="Profile" />
+      </div>
+      <div class="intro-text">
+        <h1>Alberto Louis C. Cruz</h1>
+        <p>
+          A recent graduate with a Bachelor of Science in Computer Engineering from De La Salle University – Manila.
+        </p>
+        <button class="start-btn" onclick="scrollToProjects()">Projects <span>&rsaquo;</span></button>
+      </div>
+    </div>
+  </main>
+
+  <section class="projects" id="projects">
+    <h2>Projects</h2>
+    <p class="subtitle">
+      Led and contributed to a range of projects during college which focused on solving real-world user and business challenges through ML/AI and embedded systems.
+      Blended technical innovation with practical application designing intelligent solutions.
+    </p>
+
+    <div class="project-card">
+  <div class="project-text">
+    <h3>NFC Scanner For Digital Receipts</h3>
+    <p>Utilized a low-cost NFC transmitter device that replaces traditional receipt printers by transmitting digital receipts directly via NFC.</p>
+    <a href="https://drive.google.com/file/d/1qd-oQ5xgLERM8ql6aOGeiYQ9nzjD2ROB/view?usp=sharing" target="_blank">
+      <button class="case-btn orange">View Documentation &rsaquo;</button>
+    </a>
+  </div>
+  <img src="project1.jpg" alt="Project 1" />
+</div>
+
+
+    <div class="project-card reverse">
+      <img src="project2.jpg" alt="Project 2" />
+      <div class="project-text">
+        <h3>Email Summarizer and Responder</h3>
+        <p>This project uses Streamlit for the UI and LangChain with Ollama's Mistral model for the AI processing. It allows the user to upload eml files extracts the content and gives the user two options to summarize them and generate a response.</p>
+        <a href="https://github.com/alcruz02/Email-Summarizer-and-Responder" target="_blank">
+        <button class="case-btn blue">View Documentation &rsaquo;</button>
+      </a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-text">
+        <h3>AI Therapist Bot</h3>
+        <p>A chat style Therapist Bot using the Amod/mental_health_counseling_conversations, and fadodr/mental_health_therapy Utilizing the microsoft/DialoGPT-medium</p>
+        <a href="https://github.com/alcruz02/AI-Therapist-Bot" target="_blank">
+        <button class="case-btn green">View Documentation &rsaquo;</button>
+        </a>
+    </div>
+      <img src="project3.jpg" alt="Project 3" />
+    </div>
+  </section>
+
+  <section class="about" id="about">
+  <h2>About Me</h2>
+  <p>
+    I am Alberto Louis C. Cruz, a recent graduate with a Bachelor of Science in Computer Engineering from De La Salle University – Manila. I am deeply passionate about technology, with particular interests in cybersecurity, networks, and ML/AI.
+  </p>
+</section>
+
+<footer class="contact" id="contact">
+  <h2>Contact</h2>
+  <p>📞 +63 945 451 7257</p>
+  <p>📧 alccruz2002@gmail.com</p>
+</footer>
+
+
+
+  <script src="script.js"></script>
+  
+</body>
+</html>
