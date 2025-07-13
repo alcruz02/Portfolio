@@ -8,7 +8,6 @@ html {
   scroll-behavior: smooth;
 }
 
-
 body {
   background-color: #0e0e0e;
   color: white;
@@ -22,6 +21,7 @@ body {
   padding: 1rem 3rem;
   background-color: #111;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .nav-left .nav-link {
@@ -29,6 +29,7 @@ body {
   color: #ccc;
   text-decoration: none;
   font-family: monospace;
+  font-size: 18px;
 }
 
 .nav-left .nav-link:hover {
@@ -38,7 +39,7 @@ body {
 .nav-right .icon-link {
   color: #aaa;
   margin-left: 1rem;
-  font-size: 1.2rem;
+  font-size: 16px;
 }
 
 .icon-link:hover {
@@ -107,15 +108,6 @@ body {
   background-color: #d35912;
 }
 
-.nav-left .nav-link {
-  font-size: 18px;
-}
-
-.nav-right .icon-link {
-  font-size: 16px;
-}
-
-
 .projects {
   padding: 60px 100px;
   background: white;
@@ -127,8 +119,8 @@ body {
   text-align: center;
   font-size: 50px;
   margin-bottom: 10px;
-  padding-bottom: 90px; 
-  margin-top: 0;     
+  padding-bottom: 90px;
+  margin-top: 0;
 }
 
 .subtitle {
@@ -206,7 +198,6 @@ body {
   color: #000;
 }
 
-
 .about {
   padding: 100px 60px;
   background-color: #111;
@@ -247,4 +238,84 @@ body {
   font-size: 18px;
   margin: 8px 0;
   color: #ccc;
+}
+
+
+/* ─── ✅ MOBILE RESPONSIVENESS ──────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  .nav-left, .nav-right {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav-left .nav-link,
+  .nav-right .icon-link {
+    margin: 0.5rem 0;
+  }
+
+  .intro {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .profile-img img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .intro-text h1 {
+    font-size: 2rem;
+  }
+
+  .intro-text p {
+    font-size: 0.95rem;
+  }
+
+  .projects {
+    padding: 40px 20px;
+  }
+
+  .project-card {
+    flex-direction: column !important;
+    align-items: center;
+    text-align: center;
+  }
+
+  .project-card img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+
+  .project-text {
+    max-width: 100%;
+  }
+
+  .about,
+  .contact {
+    padding: 60px 20px;
+  }
+
+  .projects h2 {
+    font-size: 36px;
+    padding-bottom: 40px;
+  }
+
+  .about h2,
+  .contact h2 {
+    font-size: 30px;
+  }
+
+  .about p,
+  .contact p {
+    font-size: 16px;
+  }
 }
